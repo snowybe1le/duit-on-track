@@ -10,11 +10,11 @@
 </head>
 <body class="texture-bg">
 
-<!-- ── Navigation ─────────────────────────────── -->
+<!-- Navigation -->
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
     <div class="nav-logo">
-      🪙 Duit<span>OnTrack</span>
+      Duit<span>OnTrack</span>
     </div>
     <div class="nav-links" id="nav-auth-links">
       <!-- Public nav -->
@@ -25,7 +25,7 @@
       <!-- Authenticated nav (hidden by default) -->
       <div id="nav-app" style="display:none;align-items:center;gap:6px;">
         <button class="nav-link" data-page="dashboard">Dashboard</button>
-        <button class="nav-link" data-page="chat">Boleh ke?</button>
+        <button class="nav-link" data-page="chat">Coach AI</button>
         <div class="nav-user-wrap">
           <button class="nav-user-btn" id="nav-user-btn">
             <div class="nav-av" id="nav-av">A</div>
@@ -33,7 +33,7 @@
             <span style="font-size:10px;color:var(--bark);">▾</span>
           </button>
           <div class="nav-dropdown" id="nav-dropdown">
-            <button onclick="handleLogout()">🚪 Log out</button>
+            <button onclick="handleLogout()"> Log out</button>
           </div>
         </div>
       </div>
@@ -41,9 +41,7 @@
   </div>
 </nav>
 
-<!-- ════════════════════════════════════════════
-     AUTH MODAL
-════════════════════════════════════════════ -->
+<!--AUTH MODAL -->
 <div id="auth-overlay" class="auth-overlay" style="display:none;">
   <div class="auth-modal">
     <button class="auth-close" onclick="closeAuthModal()">✕</button>
@@ -83,7 +81,7 @@
 
     <!-- REGISTER PANEL -->
     <div id="auth-register" class="auth-panel" style="display:none;">
-      <div class="auth-logo">🪙 DuitOnTrack</div>
+      <div class="auth-logo"> DuitOnTrack</div>
       <h2 class="auth-title">Start saving smarter</h2>
       <p class="auth-sub">Free forever. No credit card needed.</p>
 
@@ -158,8 +156,8 @@
           <div class="phone-frame">
             <div class="phone-screen">
               <div class="phone-header">
-                <span style="font-size:11px;font-weight:600;color:var(--ink)">🪙 DuitOnTrack</span>
-                <span class="pill pill-gold" style="font-size:10px;">💰 Save</span>
+                <span style="font-size:11px;font-weight:600;color:var(--ink)"> DuitOnTrack</span>
+                <span class="pill pill-gold" style="font-size:10px;"> Save</span>
               </div>
               <div class="phone-metric-row">
                 <div class="phone-metric">
@@ -194,7 +192,7 @@
     </div>
   </section>
 
-  <!-- How it works -->
+  
   <section class="section" style="background:var(--cream-dark);border-top:1px solid var(--cream-deep);border-bottom:1px solid var(--cream-deep);">
     <div class="container">
       <div class="text-center" style="margin-bottom:48px;">
@@ -204,14 +202,13 @@
         </p>
       </div>
       <div class="grid grid-3" style="grid-template-columns:repeat(3,1fr);gap:20px;">
-        <div class="card"><div class="problem-icon">🧋</div><h3>RM 6 bubble tea</h3><p>Doesn't feel like much. Until it's RM 72 at month end — 14% of your budget, gone on drinks.</p></div>
-        <div class="card"><div class="problem-icon">🚗</div><h3>RM 25 Grab ride</h3><p>One ride is fine. Daily Grab to campus is RM 125/week — more than a week of food money.</p></div>
-        <div class="card"><div class="problem-icon">📱</div><h3>Impulse Shopee buys</h3><p>You open the app at midnight. There's a flash sale. RM 30 leaves your wallet before you think.</p></div>
+        <div class="card"><div class="problem-icon"></div><h3>RM 6 bubble tea</h3><p>Doesn't feel like much. Until it's RM 72 at month end — 14% of your budget, gone on drinks.</p></div>
+        <div class="card"><div class="problem-icon"></div><h3>RM 25 Grab ride</h3><p>One ride is fine. Daily Grab to campus is RM 125/week — more than a week of food money.</p></div>
+        <div class="card"><div class="problem-icon"></div><h3>Impulse Shopee buys</h3><p>You open the app at midnight. There's a flash sale. RM 30 leaves your wallet before you think.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- 3 Core Features -->
   <section class="section">
     <div class="container">
       <div class="text-center" style="margin-bottom:48px;">
@@ -224,15 +221,15 @@
           <div class="feature-num">01</div>
           <h3>"Boleh ke?" Check</h3>
           <p>Type any spending question before you buy. Get a Yes / Wait / No verdict with context-aware AI reasoning — not a rule engine.</p>
-          <div class="feature-example"><span class="pill pill-gold">⏳ Wait</span><span style="font-size:12px;color:var(--bark);margin-left:8px;">You have RM 180 left for 12 days…</span></div>
+          <div class="feature-example"><span class="pill pill-gold"> Wait</span><span style="font-size:12px;color:var(--bark);margin-left:8px;">You have RM 180 left for 12 days…</span></div>
         </div>
         <div class="feature-card card">
           <div class="feature-num">02</div>
           <h3>Mood Mode Toggle</h3>
           <p>Toggle between Save Mode (strict) and Spend Mode (relaxed). Same question gives a different answer based on your mode.</p>
           <div class="feature-example mini-toggle-row">
-            <span class="mini-toggle active-toggle">💰 Save</span>
-            <span class="mini-toggle">🎉 Spend</span>
+            <span class="mini-toggle active-toggle"> Save</span>
+            <span class="mini-toggle">Spend</span>
           </div>
         </div>
         <div class="feature-card card">
@@ -254,7 +251,7 @@
     </div>
   </section>
 
-  <!-- CTA -->
+ 
   <section class="section" style="background:var(--bark-dark);">
     <div class="container text-center">
       <h2 style="color:var(--cream);margin-bottom:12px;">Ready to stop guessing?</h2>
@@ -264,9 +261,7 @@
   </section>
 </div>
 
-<!-- ════════════════════════════════════════════
-     PAGE 2 — DASHBOARD (authenticated)
-════════════════════════════════════════════ -->
+<!--  PAGE 2 — DASHBOARD (authenticated) -->
 <div id="page-dashboard" class="page page-offset">
   <section class="section-sm">
     <div class="container">
@@ -340,9 +335,7 @@
   </section>
 </div>
 
-<!-- ════════════════════════════════════════════
-     PAGE 3 — CHAT (authenticated)
-════════════════════════════════════════════ -->
+<!--  PAGE 3 — CHAT (authenticated) -->
 <div id="page-chat" class="page page-offset">
   <div class="chat-page-layout">
     <div class="chat-sidebar">
@@ -380,18 +373,18 @@
     <div class="chat-main">
       <div class="chat-topbar">
         <div style="display:flex;align-items:center;gap:10px;">
-          <div class="bubble-avatar ai-av" style="width:36px;height:36px;font-size:18px;">🪙</div>
+          <div class="bubble-avatar ai-av" style="width:36px;height:36px;font-size:18px;"></div>
           <div>
             <div style="font-weight:600;font-size:14px;">Duit Coach</div>
             <div style="font-size:12px;color:var(--green)">● Online — ready to coach</div>
           </div>
         </div>
-        <div class="pill pill-gold" id="chat-mode-pill">💰 Save</div>
+        <div class="pill pill-gold" id="chat-mode-pill">Save</div>
       </div>
 
       <div class="chat-area" id="chat-area">
         <div id="chat-placeholder" class="chat-placeholder">
-          <div class="placeholder-icon">🪙</div>
+          <div class="placeholder-icon"></div>
           <h3 style="margin-bottom:8px;">Tanya apa-apa saja!</h3>
           <p style="max-width:320px;text-align:center;">Ask me "Boleh ke I beli…?" and I'll give you a verdict based on your budget and goals.</p>
           <div class="placeholder-chips">
@@ -409,13 +402,11 @@
   </div>
 </div>
 
-<!-- ════════════════════════════════════════════
-     ADD GOAL MODAL
-════════════════════════════════════════════ -->
+<!-- ADD GOAL MODAL-->
 <div id="goal-modal-overlay" class="auth-overlay" style="display:none;">
   <div class="auth-modal" style="max-width:480px;">
     <button class="auth-close" onclick="closeGoalModal()">✕</button>
-    <div class="auth-logo">🎯 Add a Goal</div>
+    <div class="auth-logo"> Add a Goal</div>
     <h2 class="auth-title" style="font-size:1.4rem;">What are you saving for?</h2>
     <p class="auth-sub">Set a goal and your coach will track every decision toward it.</p>
 
@@ -436,9 +427,8 @@
       </div>
     </div>
 
-    <!-- Budget setup (compact) -->
     <hr class="divider" style="margin:20px 0;">
-    <p style="font-size:13px;font-weight:500;color:var(--bark-dark);margin-bottom:12px;">📊 Your current budget info</p>
+    <p style="font-size:13px;font-weight:500;color:var(--bark-dark);margin-bottom:12px;"> Your current budget info</p>
     <div class="form-row two-col">
       <div class="form-group">
         <label>Monthly budget (RM)</label>
@@ -460,9 +450,7 @@
   </div>
 </div>
 
-<!-- ════════════════════════════════════════════
-     GOAL REPORT MODAL
-════════════════════════════════════════════ -->
+<!--  GOAL REPORT MODAL -->
 <div id="report-modal-overlay" class="auth-overlay" style="display:none;">
   <div class="auth-modal report-modal">
     <button class="auth-close" onclick="closeReportModal()">✕</button>
@@ -473,8 +461,7 @@
 <!-- Toast -->
 <div id="toast" class="toast"></div>
 
-<!-- ── Scripts ──────────────────────────────────── -->
-<!-- Firebase SDK (ESM via CDN) -->
+
 <script type="module">
   import {
     registerWithEmail, loginWithEmail, loginWithGoogle, logout, onAuthChange,
@@ -485,7 +472,7 @@
     saveMonthlyReport, getGoalReports
   } from './js/firebase.js';
 
-  // ── App State ───────────────────────────────────
+
   const state = {
     user: null,
     profile: { budget: 0, daysLeft: 0, sideIncome: '', mode: 'jimat' },
@@ -496,7 +483,6 @@
     totalSaved: 0,
   };
 
-  // ── Make helpers global (for inline onclick) ────
   window.navigateTo = navigateTo;
   window.showAuthModal = showAuthModal;
   window.closeAuthModal = closeAuthModal;
@@ -513,7 +499,7 @@
   window.showToast = showToast;
   window.state = state;
 
-  // ── Auth Handlers ───────────────────────────────
+─
   async function handleGoogleLogin() {
     try {
       const user = await loginWithGoogle();
@@ -548,7 +534,7 @@
     if (userData) {
       state.profile = { ...state.profile, ...userData.profile };
     }
-    // Load goals and decisions from Firestore
+    
     await loadGoals();
     await loadDecisions();
     await loadChatHistory();
@@ -576,7 +562,7 @@
     document.getElementById('nav-app').style.display = 'none';
   }
 
-  // ── Auth State Listener ─────────────────────────
+ 
   onAuthChange(async (user) => {
     if (user) {
       state.user = user;
@@ -587,7 +573,7 @@
       await loadChatHistory();
       updateNavForUser(user);
       if (state.goals.length === 0) {
-        navigateTo('landing'); // First-time user: show landing
+        navigateTo('landing'); 
       } else {
         navigateTo('dashboard');
       }
@@ -596,7 +582,6 @@
     }
   });
 
-  // ── Goals ───────────────────────────────────────
   async function loadGoals() {
     if (!state.user) return;
     state.goals = await getGoals(state.user.uid);
@@ -642,7 +627,7 @@
   }
   window.removeGoal = removeGoal;
 
-  // ── Decisions ───────────────────────────────────
+  // ── Decisions 
   async function loadDecisions() {
     if (!state.user) return;
     state.decisions = await getRecentDecisions(state.user.uid, 10);
@@ -654,7 +639,7 @@
     state.chatHistory = await getRecentChatHistory(state.user.uid, 20);
   }
 
-  // ── Render Goals ────────────────────────────────
+  // ── Render Goals ────
   function renderGoals() {
     const container = document.getElementById('goals-list');
     if (!container) return;
@@ -687,7 +672,7 @@
     }).join('');
   }
 
-  // ── Goal Report Modal ───────────────────────────
+  // ── Goal Report Modal ────
   async function showGoalReport(goalId) {
     const goal = state.goals.find(g => g.id === goalId);
     if (!goal) return;
@@ -802,7 +787,7 @@
       </div>`).join('');
   }
 
-  // ── AI Response (calls Claude API) ─────────────
+  // ── AI Response (calls Claude API)
   async function getAIResponse(question) {
     // Build context from state + recent history
     const historyContext = state.chatHistory.slice(-10).map(h =>
@@ -858,7 +843,7 @@ Then give 2-4 sentences of reasoning in Manglish. Be specific about their number
     return { verdict, text: cleanText };
   }
 
-  // ── Chat Functions ──────────────────────────────
+  // ── Chat Functions 
   function initChat() {
     const input = document.getElementById('chat-input');
     const sendBtn = document.getElementById('chat-send');
@@ -1002,7 +987,7 @@ Then give 2-4 sentences of reasoning in Manglish. Be specific about their number
     }, 100);
   }
 
-  // ── Navigation ──────────────────────────────────
+  // ── Navigation 
   function navigateTo(pageId) {
     if (['dashboard','chat'].includes(pageId) && !state.user) {
       showAuthModal('login'); return;
@@ -1016,7 +1001,7 @@ Then give 2-4 sentences of reasoning in Manglish. Be specific about their number
     if (pageId === 'dashboard') refreshDashboard();
   }
 
-  // ── Auth Modal ──────────────────────────────────
+  // ── Auth Modal 
   function showAuthModal(panel) {
     document.getElementById('auth-overlay').style.display = 'flex';
     document.getElementById('auth-login').style.display = panel === 'login' ? 'block' : 'none';
@@ -1057,7 +1042,7 @@ Then give 2-4 sentences of reasoning in Manglish. Be specific about their number
     }
   });
 
-  // ── Mode Toggle ─────────────────────────────────
+  // Mode Toggle 
   document.querySelectorAll('.toggle-opt[data-mode]').forEach(btn => {
     btn.addEventListener('click', () => {
       state.profile.mode = btn.dataset.mode;
@@ -1073,15 +1058,15 @@ Then give 2-4 sentences of reasoning in Manglish. Be specific about their number
     });
   });
 
-  // ── Nav links ───────────────────────────────────
+  // ── Nav links 
   document.querySelectorAll('.nav-link[data-page]').forEach(btn => {
     btn.addEventListener('click', () => navigateTo(btn.dataset.page));
   });
 
-  // ── Init chat ───────────────────────────────────
+  // Init chat 
   initChat();
 
-  // ── Helpers ─────────────────────────────────────
+  //  Helpers 
   function setEl(id, content) { const el = document.getElementById(id); if (el) el.textContent = content; }
 
   function renderMd(text) {
