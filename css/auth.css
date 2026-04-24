@@ -1,0 +1,182 @@
+/* ── Auth Modal ─────────────────────────────────── */
+.auth-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30,26,18,.55);
+  backdrop-filter: blur(6px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.auth-modal {
+  background: var(--cream);
+  border: 1px solid var(--cream-deep);
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: fadeUp 0.3s cubic-bezier(.34,1.56,.64,1) both;
+}
+.report-modal { max-width: 600px; }
+.auth-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  background: var(--cream-deep);
+  border: none;
+  width: 30px; height: 30px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: var(--bark);
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all var(--transition);
+}
+.auth-close:hover { background: var(--cream-dark); color: var(--ink); }
+
+.auth-logo {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 16px;
+}
+.auth-title {
+  font-size: 1.6rem;
+  margin-bottom: 6px;
+}
+.auth-sub {
+  color: var(--bark);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 20px;
+  background: #fff;
+  border: 1.5px solid var(--cream-deep);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+.google-btn:hover {
+  border-color: var(--sand);
+  box-shadow: var(--shadow-sm);
+  background: var(--cream-dark);
+}
+
+.auth-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+  color: var(--sand-dark);
+  font-size: 12px;
+}
+.auth-divider::before,
+.auth-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--cream-deep);
+}
+
+.auth-error {
+  background: var(--red-light);
+  color: var(--red);
+  border: 1px solid #e4b8b5;
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.auth-switch {
+  text-align: center;
+  font-size: 13px;
+  color: var(--bark);
+  margin-top: 16px;
+}
+.auth-switch button {
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 0;
+}
+.auth-switch button:hover { text-decoration: underline; }
+
+/* ── Nav User ───────────────────────────────────── */
+.nav-user-wrap { position: relative; }
+.nav-user-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--cream-dark);
+  border: 1px solid var(--cream-deep);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  font-size: 13px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+.nav-user-btn:hover { background: var(--cream-deep); }
+.nav-av {
+  width: 24px; height: 24px;
+  border-radius: 50%;
+  background: var(--gold-pale);
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--cream);
+  border: 1px solid var(--cream-deep);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  min-width: 140px;
+  z-index: 100;
+  overflow: hidden;
+}
+.nav-dropdown button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 13px;
+  color: var(--ink);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: background var(--transition);
+}
+.nav-dropdown button:hover { background: var(--cream-dark); }
+
+/* ── Goal card ──────────────────────────────────── */
+.goal-card { transition: box-shadow var(--transition), transform var(--transition); }
+.goal-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
