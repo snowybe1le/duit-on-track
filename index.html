@@ -48,7 +48,7 @@
 
     <!-- LOGIN PANEL -->
     <div id="auth-login" class="auth-panel">
-      <div class="auth-logo">🪙 DuitOnTrack</div>
+      <div class="auth-logo"> DuitOnTrack</div>
       <h2 class="auth-title">Welcome back</h2>
       <p class="auth-sub">Log in to continue your savings journey</p>
 
@@ -180,8 +180,8 @@
               <div class="phone-chat">
                 <div class="phone-bubble user-b">Boleh ke I beli AirPods RM 450?</div>
                 <div class="phone-bubble ai-b">
-                  <div style="color:var(--gold);font-size:10px;font-weight:600;margin-bottom:4px;">⏳ Wait dulu</div>
-                  You have RM 180 left for 12 days. Wait for Saturday's tuition. 🌴
+                  <div style="color:var(--gold);font-size:10px;font-weight:600;margin-bottom:4px;"> Wait dulu</div>
+                  You have RM 180 left for 12 days. Wait for Saturday's tuition. 
                 </div>
               </div>
             </div>
@@ -262,9 +262,7 @@
   </section>
 </div>
 
-<!-- ════════════════════════════════════════════
-     PAGE 2 — DASHBOARD (authenticated)
-════════════════════════════════════════════ -->
+<!--  PAGE 2 — DASHBOARD (authenticated) -->
 <div id="page-dashboard" class="page page-offset">
   <section class="section-sm">
     <div class="container">
@@ -272,12 +270,12 @@
       <!-- Header -->
       <div class="dash-header">
         <div>
-          <h2 id="dash-name">Hi! 👋</h2>
-          <p id="dash-mode-label" style="font-size:14px;color:var(--bark);margin-top:4px;">💰 Save Mode — I'll be strict with you</p>
+          <h2 id="dash-name">Hello! </h2>
+          <p id="dash-mode-label" style="font-size:14px;color:var(--bark);margin-top:4px;"> Save Mode — I'll be strict with you</p>
         </div>
         <div class="toggle-wrap">
-          <button class="toggle-opt active" data-mode="jimat">💰 Save</button>
-          <button class="toggle-opt" data-mode="pakai">🎉 Spend</button>
+          <button class="toggle-opt active" data-mode="jimat"> Save</button>
+          <button class="toggle-opt" data-mode="pakai"> Spend</button>
         </div>
       </div>
 
@@ -302,7 +300,7 @@
 
       <!-- Quick ask -->
       <div class="quick-ask card" style="margin-top:20px;background:var(--gold-pale);border-color:rgba(200,146,42,.2);">
-        <p style="font-size:13px;color:var(--bark-dark);font-weight:500;margin-bottom:10px;">💬 Quick "Boleh ke?" check</p>
+        <p style="font-size:13px;color:var(--bark-dark);font-weight:500;margin-bottom:10px;"> Quick "Boleh ke?" check</p>
         <div style="display:flex;gap:10px;">
           <input class="input" type="text" id="quick-input" placeholder="Boleh ke I beli…" style="background:#fff;" />
           <button class="btn btn-primary" onclick="quickAsk()">Ask →</button>
@@ -330,7 +328,7 @@
           <button class="btn btn-ghost btn-sm" onclick="navigateTo('chat')">Full chat →</button>
         </div>
         <div id="dash-decisions">
-          <p style="color:var(--bark);font-size:13px;text-align:center;padding:16px 0;">No decisions yet. Ask your first "Boleh ke?" above! 💬</p>
+          <p style="color:var(--bark);font-size:13px;text-align:center;padding:16px 0;">No decisions yet. Ask your first "Boleh ke?" above! </p>
         </div>
       </div>
 
@@ -338,9 +336,7 @@
   </section>
 </div>
 
-<!-- ════════════════════════════════════════════
-     PAGE 3 — CHAT (authenticated)
-════════════════════════════════════════════ -->
+<!--   PAGE 3 — CHAT (authenticated) -->
 <div id="page-chat" class="page page-offset">
   <div class="chat-page-layout">
     <div class="chat-sidebar">
@@ -354,10 +350,10 @@
       <hr class="divider">
       <div style="font-size:12px;font-weight:500;color:var(--bark);margin-bottom:10px;">Mood mode</div>
       <div class="toggle-wrap">
-        <button class="toggle-opt active" data-mode="jimat">💰 Save</button>
-        <button class="toggle-opt" data-mode="pakai">🎉 Spend</button>
+        <button class="toggle-opt active" data-mode="jimat"> Save</button>
+        <button class="toggle-opt" data-mode="pakai"> Spend</button>
       </div>
-      <div id="mode-label" style="font-size:12px;color:var(--bark);margin-top:10px;line-height:1.5;">💰 Save Mode — I'll be strict with you</div>
+      <div id="mode-label" style="font-size:12px;color:var(--bark);margin-top:10px;line-height:1.5;"> Save Mode — I'll be strict with you</div>
       <hr class="divider">
       <div style="font-size:12px;font-weight:500;color:var(--bark);margin-bottom:10px;">Try asking about</div>
       <div class="example-chips">
@@ -378,18 +374,18 @@
     <div class="chat-main">
       <div class="chat-topbar">
         <div style="display:flex;align-items:center;gap:10px;">
-          <div class="bubble-avatar ai-av" style="width:36px;height:36px;font-size:18px;">🪙</div>
+          <div class="bubble-avatar ai-av" style="width:36px;height:36px;font-size:18px;"></div>
           <div>
             <div style="font-weight:600;font-size:14px;">Duit Coach</div>
             <div style="font-size:12px;color:var(--green)">● Online — ready to coach</div>
           </div>
         </div>
-        <div class="pill pill-gold" id="chat-mode-pill">💰 Save</div>
+        <div class="pill pill-gold" id="chat-mode-pill"> Save</div>
       </div>
 
       <div class="chat-area" id="chat-area">
         <div id="chat-placeholder" class="chat-placeholder">
-          <div class="placeholder-icon">🪙</div>
+          <div class="placeholder-icon"></div>
           <h3 style="margin-bottom:8px;">Tanya apa-apa saja!</h3>
           <p style="max-width:320px;text-align:center;">Ask me "Boleh ke I beli…?" and I'll give you a verdict based on your budget and goals.</p>
           <div class="placeholder-chips">
@@ -413,7 +409,7 @@
 <div id="goal-modal-overlay" class="auth-overlay" style="display:none;">
   <div class="auth-modal" style="max-width:480px;">
     <button class="auth-close" onclick="closeGoalModal()">✕</button>
-    <div class="auth-logo">🎯 Add a Goal</div>
+    <div class="auth-logo"> Add a Goal</div>
     <h2 class="auth-title" style="font-size:1.4rem;">What are you saving for?</h2>
     <p class="auth-sub">Set a goal and your coach will track every decision toward it.</p>
 
@@ -436,7 +432,7 @@
 
     <!-- Budget setup (compact) -->
     <hr class="divider" style="margin:20px 0;">
-    <p style="font-size:13px;font-weight:500;color:var(--bark-dark);margin-bottom:12px;">📊 Your current budget info</p>
+    <p style="font-size:13px;font-weight:500;color:var(--bark-dark);margin-bottom:12px;"> Your current budget info</p>
     <div class="form-row two-col">
       <div class="form-group">
         <label>Monthly budget (RM)</label>
@@ -458,9 +454,7 @@
   </div>
 </div>
 
-<!-- ════════════════════════════════════════════
-     GOAL REPORT MODAL
-════════════════════════════════════════════ -->
+<!-- GOAL REPORT MODAL -->
 <div id="report-modal-overlay" class="auth-overlay" style="display:none;">
   <div class="auth-modal report-modal">
     <button class="auth-close" onclick="closeReportModal()">✕</button>
@@ -471,7 +465,6 @@
 <!-- Toast -->
 <div id="toast" class="toast"></div>
 
-<!-- ── Scripts ──────────────────────────────────── -->
 <!-- Firebase SDK (ESM via CDN) -->
 <script type="module">
   import {
@@ -483,7 +476,6 @@
     saveMonthlyReport, getGoalReports
   } from './js/firebase.js';
 
-  // ── App State ───────────────────────────────────
   const state = {
     user: null,
     profile: { budget: 0, daysLeft: 0, sideIncome: '', mode: 'jimat' },
