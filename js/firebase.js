@@ -1,6 +1,4 @@
-// ── DuitOnTrack Firebase Config ──────────────────
-// Replace these values with your actual Firebase project config
-// Go to: Firebase Console → Project Settings → Your apps → Web app → SDK setup
+
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import {
